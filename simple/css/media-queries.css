@@ -1,0 +1,136 @@
+@media (max-width: 1150px) {
+
+fieldset a {
+	padding: 20px 20%;
+} 	
+}
+
+@media (max-width: 1100px) {
+.main {
+	height: 980px;
+}
+.footer {
+	margin-top: 230px;
+}
+}
+
+@media (max-width: 1025px) {
+.main {
+	height: 1040px;
+}
+.footer {
+	margin-top: 290px;
+}
+}
+
+@media (max-width: 900px) {
+.main {
+	height: 1140px;
+}
+.footer {
+	margin-top: 390px;
+}
+.header2 img {
+	float: left;
+	margin-left: 50px;
+}
+.header2 p {
+	width: 600px;
+	margin-left: 200px;
+
+}
+.header2 p:last-child {
+	margin-left: 300px;
+}
+legend {
+	margin-left: 25%;
+}	
+}
+
+@media (max-width: 800px) {
+.main {
+	height: 1340px;
+}	
+.footer {
+	margin-top: 590px;
+}
+
+.header2 img {
+	float: left;
+	margin-left: 20px;
+}
+.header2 p {
+	width: 600px;
+	margin-left: 150px;
+
+}
+.header2 p:last-child {
+	margin-left: 280px;
+}	
+fieldset a {
+	padding: 20px 10%;
+}
+legend {
+	margin-left: 18%;
+}	 
+}
+
+@media (max-width: 700px) {
+.header2  {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.header2 p {
+	width: 400px;
+}
+.header2 p:last-child {
+	margin-left: 150px;
+}
+legend {
+	margin-left: 16%;
+}
+.main {
+	height: 1440px;
+}
+.footer {
+	margin-top: 690px;
+}
+fieldset {
+	height: 642px;
+}
+}
+
+
+/* Iphone 4 and etc */
+
+@media screen and (max-width: 640px)  {
+
+.textForm {
+	width: 90%;
+	margin-top: 50px;
+	font-size: normal;
+	line-height: 1.75;
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+}
+
+fieldset {
+	width: 82%;
+	height: 622px;
+	border: 3px solid #353433;
+}
+fieldset a {
+	padding: 20px 20%;
+}
+legend {
+	margin-left: 28%;
+}
+.main {
+	height: 1580px;
+}
+.footer {
+	margin-top: 100px;
+}
+}
+
+
