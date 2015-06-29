@@ -1,107 +1,128 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+<head>
+	<title>Example of resposive landing page</title>
+	<meta charset="utf-8">
+  
+  <!-- main css -->
+  <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+	
+  <!-- media queries css -->
+  <link href="css/media-queries.css" media="screen" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+  <!--Fonts-->
+  <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	
+  <!--Sprites-->
+  <link href="sprites/css/font-awesome.css" rel="stylesheet">
+ 
+  
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Openmodal.GitHub.io by openmodal</title>
-  </head>
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/openmodal">View on GitHub</a>
-    <div class="shell">
+</head>
+<body>
+  
+     <div class="header0">
+       <img src="img/logo.png" alt="Logo: HTML+CSS">
+     </div>
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Openmodal.GitHub.io</h1>
-            <h2>A fresh approach to experimental modal analysis</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+     <div class="header1">
+      <div class="divider"></div>
+      <h2>Lorem ipsum dolor sit amet, consectetur </h2>
+      <h1>Lorem ip sum dolor sit amet, consectetur adipiscing elit.</h1>
+      <a href="#"><i class="fa fa-arrow-circle-down"></i>Some Very Useful Button</a>
+      <div class="divider"></div>
+     </div>	
 
-      <div id="no-downloads">
-        <span class="inner">
-        </span>
+     <div class="header2">
+     	<img src="img/item1.png" alt="Cat-Face">
+      <p>"Inbound marketing is extremely effective yet complex. Many never dig in because doing it well isn’t easy. Boiling it down to the basics, IMPACT's 'Beginners Guide' makes it easy to understand with the right mix of text, video, and images."
+       </p>
+
+        <p> <strong> - Ed Marsh</strong>, B2B Business Development Consultant </p>
+     </div>	
+
+  <div class="main">
+      <div class="subMain">
+      <div class="textForm">
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam.
+        </p>
+        <br>
+        
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam.
+        </p>
+        <br>
+        
+        <p><strong>Lorem:</strong></p>
+         <ul>
+          <li>Duis <strong>vulputate</strong> commodo lectus, ac blandit elit tincidunt id.</li>
+          <li>consectetur adipiscing elit.</li>
+          <li><strong>Nulla quam velit</strong>, vulputate eu pharetra nec.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+         </ul>
+    
       </div>
+     <br> <br> <br>
+     <fieldset>
+            <legend>Lorem ipsum</legend>
+            
+            <label>First name<i>*</i></label><br>
+            <input type="text" class="firstName"><br>
+            <span class="firstNameHelp">Incorrect name.</span><br>
 
+            <label>Last name<i>*</i></label><br>
+            <input type="text" class="lastName"><br>
+            <span class="lastNameHelp">Incorrect last name.</span><br>
 
-      <span class="banner-fix"></span>
+            <label>Email<i>*</i></label><br>
+            <input type="text" class="email"><br>
+            <span class="emailHelp">Incorrect email.</span><br>
 
+            <label>Phone<i>*</i></label><br>
+            <input type="text" class="phone"><br>
+            <span class="phoneHelp">Incorrect phone number</span><br>
 
-      <section id="main_content">
-        <h3>
-<a id="-welcome-to-github-pages" class="anchor" href="#-welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>### Welcome to GitHub Pages.</h3>
+            <label>Role title<i>*</i></label><br>
+            <select>
+              <option>Default Option</option>
+              <option>Option 1</option>   
+              <option>Option 2</option>   
+              <option>Option 3</option>
+              <option>Option 4</option>  
+              <option>Option 5</option>
+            </select><br>
+            <span class="selectHelp">You have to select something</span><br>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+            <label>Your message</label><br>
+            <input type="text" name="message"><br>
+            <span>Error</span><br>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+            <input type="checkbox">
+            <label>Some checkbox</label><br>
+            
+            <div class="btn">
+          <a href="#"><i class="fa fa-lightbulb-o"></i>Another useful button</a>
+            </div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+     </fieldset> 
+   </div>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+   <div class="footer">
+    &copy; Igor Filippov
+   </div>
+   
+</div>
+  
+  
+ <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/validation.js"></script>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>Projects by <a href="https://github.com/openmodal">openmodal</a> can be found on <a href="https://github.com/openmodal">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
-    </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-64441850-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-  </body>
+</body>
 </html>
+
