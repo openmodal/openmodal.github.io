@@ -27,7 +27,7 @@ body {
 .divider:last-child {
 	margin-top: 70px;
 }
-.header1 aa {
+.header1 a {
 	padding: 20px;
 	background: #47b4f0;
 	text-decoration: none;
@@ -52,7 +52,7 @@ body {
 	color: #d5d3ce;
 	margin-bottom: 60px;
 
-	
+
 }
 .header2 img {
 	float: left;
@@ -76,7 +76,7 @@ body {
 	background: rgba(178,178,178,0.7);
 	margin: 0 auto;
 	box-shadow: 0 0 10px;
-	
+
 }
 
 .subMain {
@@ -87,7 +87,7 @@ body {
 .textForm {
 	width: 40%;
 	margin-top: 50px;
-	
+
 	margin-right: 30px;
 	float: left;
 	font-size: normal;
@@ -104,7 +104,7 @@ fieldset {
 	width: 42%;
 	height: 622px;
 	border: 3px solid #353433;
-	
+
 }
 legend {
 	margin-left: 31%;
@@ -124,7 +124,7 @@ fieldset input {
 
 fieldset label {
 	font-family: 'Open Sans', sans-serif;
-	
+
 
 }
 fieldset i {
@@ -134,7 +134,7 @@ fieldset select {
 	width: 100%;
 	height: 34px;
 	border-radius: 4px;
-	
+
 }
 
 input[type="checkbox"] {
@@ -184,7 +184,7 @@ input {
 
 
 }
-	
+
 .temp {
 	background: white !important;
 }
