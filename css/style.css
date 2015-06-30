@@ -24,10 +24,11 @@ body {
 .header1 {
 	text-align: center;
 	width: 80%;
-	height: 250px;
-	margin: 50px 0 0 0;
+	height: 150px;
+	margin-left: auto;
+    margin-right: auto;
 	font-family: 'Courgette', cursive;
-	color: rgb(255,157,0);
+	color: white;
 	background: rgba(0,187,255,0.5);
 	text-decoration: none;
 	border-radius: 10px;
