@@ -1,0 +1,22 @@
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About OpenModal</h2>
+                <p>We are developing a Python based environment for experimental modal analysis.
+             The first public presentation will be at the <a href="http://www.icoev.org">www.icoev.org</a>  conference (Ljubljana, Sep 2015).
+The code is not yet public; however, we plan to go public early 2016.<br>
+                    OpenModal was started by PhD graduates of <a href="http://www.ladisk.si">www.ladisk.si</a></p>
+            <ul class="list-inline banner-social-buttons">
+                {% for network in site.social %}
+                <li>
+                    <a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
+                </li>
+                {% endfor %}
+            </ul>
+            </div>
+
+        </div>
+                    <h2><a href="http://goo.gl/forms/XZwOSvRjWO">
+             <i class="fa fa-external-link"></i>Join for testing & code developing</a></h2>
+    </section>

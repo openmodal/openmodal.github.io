@@ -1,0 +1,30 @@
+# Site settings
+title: OpenModal
+email: janko.slavic@fs.uni-lj.si
+url: http://www.openmodal.com
+description: "We are developing a Python based environment for experimental modal analysis. The first public presentation will be at the www.icoev.org conference (Ljubljana, Sep 2015). The code is not yet public; however, we plan to go public early 2016."
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-dark: 'rgb(178,197,97)'
+  links: 'rgb(96,116,0)'
+
+# Footer settings
+footer: OpenModal
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+#  - title: twitter
+#    url: https://twitter.com/SBootstrap
+#  - title: facebook
+#    url:
+#  - title: stack-overflow
+#    url: http://stackoverflow.com/questions/tagged/jekyll
+#  - title: bitbucket
+#    url: http://bitbucket.org/jekyll
+  - title: github
+    url: https://github.com/openmodal
+
+# Build settings
+markdown: kramdown
+permalink: pretty
