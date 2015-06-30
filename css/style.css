@@ -1,8 +1,8 @@
 /*
    green: rgb(213,255,0)
    green_t: rgba(213,255,0,0.5)
-   blue: rgb(0,255,187)
-   blue_t: rgba(0,255,187,0.5)
+   blue: rgb(0,187,255)
+   blue_t: rgba(0,187,255,0.5)
    violet: rgb(115,203,0)
    violet_t: rgba(115,203,0,0.5)
    red: rgb(234,0,55)
@@ -30,7 +30,7 @@ body {
 	color: rgb(255,157,0);
 }
 .divider {
-	border: 1px solid rgba(0,255,187,0.5);
+	border: 1px solid rgba(0,187,255,0.5);
 	width: 80%;
 	position: relative;
 	left: 10%;
@@ -40,7 +40,7 @@ body {
 }
 .header1 a {
 	padding: 20px;
-	background: rgba(0,255,187,0.5);
+	background: rgba(0,187,255,0.5);
 	text-decoration: none;
 	border-radius: 10px;
 	position: relative;
@@ -60,7 +60,7 @@ body {
 	height: 150px;
 	font-style: italic;
 	font-size: 1.3em;
-	color: rgba(0,255,187,0.5);
+	color: rgba(0,187,255,0.5);
 	margin-bottom: 60px;
 
 
