@@ -23,18 +23,16 @@ body {
 }
 .header1 {
 	text-align: center;
-	width: 100%;
+	width: 80%;
 	height: 250px;
 	margin: 50px 0 0 0;
 	font-family: 'Courgette', cursive;
-/*	color: rgb(255,157,0);
-*/
+	color: rgb(255,157,0);
 	background: rgba(0,187,255,0.5);
 	text-decoration: none;
 	border-radius: 10px;
 	position: relative;
 	top: 20px;
-	color: black;
 	font-family: 'Roboto', sans-serif;
 }
 .divider {
