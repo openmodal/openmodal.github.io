@@ -34,7 +34,6 @@ body {
 	border-radius: 10px;
 	position: relative;
 	top: 20px;
-	font-family: 'Roboto', sans-serif;
 }
 .divider {
 	border: 1px solid rgba(0,187,255,0.5);
@@ -47,6 +46,15 @@ body {
 }
 .header1 a {
 	padding: 20px;
+	text-decoration: none;
+	position: relative;
+	top: 20px;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*.header1 a {
+	padding: 20px;
 	background: rgba(0,187,255,0.5);
 	text-decoration: none;
 	border-radius: 10px;
@@ -55,8 +63,9 @@ body {
 	color: black;
 	font-family: 'Roboto', sans-serif;
 }
+*/
 .header1 a:hover {
-	color: rgb(255,157,0);
+	color: white;
 }
 .header1 i {
 	margin-right: 4px;
