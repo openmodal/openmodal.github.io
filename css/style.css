@@ -1,4 +1,15 @@
-
+/*
+   green: rgb(213,255,0)
+   green_t: rgba(213,255,0,0.5)
+   blue: rgb(0,255,187)
+   blue_t: rgba(0,255,187,0.5)
+   violet: rgb(115,203,0)
+   violet_t: rgba(115,203,0,0.5)
+   red: rgb(234,0,55)
+   red_t: rgba(234,0,55,0.5)
+   orange: rgb(255,157,0)
+   orange_t: rgba(255,157,0,0.5)
+*/
 
 body {
 	background: url(../img/hex.jpg) no-repeat;
@@ -16,10 +27,10 @@ body {
 	height: 250px;
 	margin: 50px 0 0 0;
 	font-family: 'Courgette', cursive;
-	color: white;
+	color: rgb(255,157,0);
 }
 .divider {
-	border: 1px solid rgba(178,178,178,0.5);
+	border: 1px solid rgba(0,255,187,0.5);
 	width: 80%;
 	position: relative;
 	left: 10%;
@@ -29,7 +40,7 @@ body {
 }
 .header1 a {
 	padding: 20px;
-	background: #47b4f0;
+	background: rgba(0,255,187,0.5);
 	text-decoration: none;
 	border-radius: 10px;
 	position: relative;
@@ -38,7 +49,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 .header1 a:hover {
-	color: white;
+	color: rgb(255,157,0);
 }
 .header1 i {
 	margin-right: 4px;
@@ -49,7 +60,7 @@ body {
 	height: 150px;
 	font-style: italic;
 	font-size: 1.3em;
-	color: #d5d3ce;
+	color: rgba(0,255,187,0.5);
 	margin-bottom: 60px;
 
 
@@ -103,7 +114,7 @@ body {
 fieldset {
 	width: 42%;
 	height: 622px;
-	border: 3px solid #353433;
+	border: 3px solid rgba(234,0,55,0.5);
 
 }
 legend {
@@ -111,7 +122,7 @@ legend {
 	padding: 0 20px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5em;
-    color: #353433;
+    color: rgba(234,0,55,0.5);
 
 }
 fieldset input {
@@ -172,7 +183,7 @@ fieldset i[class="fa fa-lightbulb-o"] {
 }
 
 input {
-	border: 1px solid #353433;
+	border: 1px solid rgba(234,0,55,0.5);
 }
 
 
@@ -186,7 +197,7 @@ input {
 }
 
 .temp {
-	background: white !important;
+	background: rgb(255,157,0) !important;
 }
 
 
@@ -196,7 +207,7 @@ input {
 .firstNameHelp, .lastNameHelp, .emailHelp, .phoneHelp, .selectHelp {
 
 	font-style: italic;
-	color: red;
+	color: rgb(234,0,55);
 	opacity: 0.8;
 }
 
