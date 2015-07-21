@@ -27,7 +27,7 @@ body {
     padding: 5px;
 	margin-left: auto;
     margin-right: 10px;
-	font-family: 'Alegreya Sans SC', cursive;
+	font-family: 'Alegreya Sans SC', sans-serif;
 	color: black;
 	/*background: rgba(0,187,255,0.5);*/
 	text-decoration: none;
@@ -50,7 +50,7 @@ body {
 	text-decoration: none;
 	top: 20px;
 	color: black;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 /*.header1 a {
@@ -72,15 +72,14 @@ body {
 }
 
 .header2 {
-    padding: 50px;
-	text-align: center;
-	width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-	height: 150px;
-	font-style: italic;
-	font-size: 1.3em;
-	color: rgba(0,187,255,0.5);
+	text-align: left;
+	width: 600px;
+	margin-left: auto;
+    margin-right: 10px;
+	padding: 40px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-decoration: underline;
+	color: black;
 }
 .header2 img {
 	float: left;
