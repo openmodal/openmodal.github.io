@@ -18,8 +18,10 @@ body {
     overflow-x: hidden;
 }
 .header0 {
-	text-align: center;
-	margin: 20px 0 0 0;
+	text-align: left;
+	width: 550px;
+	margin-left: auto;
+    margin-right: 10px;
 }
 .header1 {
 	text-align: left;
@@ -47,7 +49,7 @@ body {
 .header2 a {
 	text-align: center;
 	padding: 40px;
-	text-decoration: none;
+	text-decoration: underline;
 	top: 20px;
 	color: black;
 	font-family: 'Alegreya Sans SC', sans-serif;
@@ -78,7 +80,6 @@ body {
     margin-right: 10px;
 	padding: 40px;
 	font-family: 'Alegreya Sans SC', sans-serif;
-	text-decoration: underline;
 	color: black;
 }
 .header2 img {
