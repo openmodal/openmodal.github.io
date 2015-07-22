@@ -49,7 +49,8 @@ body {
 .header2 a {
 	text-align: center;
 	padding: 40px;
-	text-decoration: underline;
+	text-decoration: none;
+	font-weight: bold;
 	top: 20px;
 	color: black;
 	font-family: 'Alegreya Sans SC', sans-serif;
