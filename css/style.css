@@ -46,9 +46,19 @@ body {
 .divider:last-child {
 	margin-top: 70px;
 }
+.header1 a {
+	text-align: center;
+	padding: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	top: 20px;
+	color: black;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
 .header2 a {
 	text-align: center;
-	padding: 40px;
+	padding: 0px;
 	text-decoration: none;
 	font-weight: bold;
 	top: 20px;
@@ -77,11 +87,16 @@ body {
 .header2 {
 	text-align: left;
 	width: 600px;
+    padding: 5px;
 	margin-left: auto;
     margin-right: 10px;
-	padding: 40px;
 	font-family: 'Alegreya Sans SC', sans-serif;
 	color: black;
+	/*background: rgba(0,187,255,0.5);*/
+	text-decoration: none;
+	border-radius: 10px;
+	position: relative;
+	top: 40px;
 }
 .header2 img {
 	float: left;
