@@ -78,7 +78,7 @@ body {
 }
 */
 .header1 a:hover {
-	color: white;
+	color: gray;
 }
 .header1 i {
 	margin-right: 4px;
