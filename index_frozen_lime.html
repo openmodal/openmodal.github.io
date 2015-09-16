@@ -9,6 +9,16 @@
 	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
 	<meta name="Resource-type" content="Document" />
 
+	<script type="text/javascript">
+		window.onload = function () {
+			if (window.innerWidth > 1000) { // Set width as appropriate
+				var script = document.createElement('script');
+				script.setAttribute('type', 'text/javascript');
+				script.src= './tfeedscr.js';
+				document.getElementById('tfeed').appendChild(script);
+				}
+			}
+	</script>
 
 	<link rel="stylesheet" type="text/css" href="fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples_.css" />
@@ -194,6 +204,7 @@
 		});
 	</script>
 
+
 </head>
 <body>
 
@@ -221,8 +232,8 @@
 			         <p style="width:640px;font-size:1em;display:block;background:#d35400; color: #f2f2f2; padding-top: 0px; padding-bottom: 0px;">OpenModal is a measurement, analysis and visualisation software for structural dynamics
              analysis. It is an open source software made with Python.<br />
          <span style="width:640px;font-size:1.5em;">It will be launched in 2016.</span></div>
-          <div style="margin:auto;"> <a class="twitter-timeline"  href="https://twitter.com/openmodal" data-widget-id="640159904653791232" width="300px" height="488">Tweets by @openmodal</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          <div id="tfeed" style="margin:auto;"> <a class="twitter-timeline"  href="https://twitter.com/openmodal" data-widget-id="640159904653791232" width="300px" height="488">Tweets by @openmodal</a>
+
      </div>
 		</div>
 	</div>
