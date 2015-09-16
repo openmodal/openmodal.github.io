@@ -1,2 +1,2 @@
 User-agent: *
-Disallow:
+Disallow: /index2.html /index__.html /index_classic_green.html /index_frozen_lime.html /index_nc.html /index_nc_1.html /index_nc_2.html /index_plain_background.html
