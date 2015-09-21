@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>OpenModal - A Fresh Approach to Modal Analysis</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed header and footer." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+	<meta name="Resource-type" content="Document" />
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<link rel="stylesheet" type="text/css" href="fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples_.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="animate.min.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Alegreya+Sans+SC">
+
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	body {
+		font-size: large;
+		}
+	h1{
+		font-size: 5em;
+		font-family: 'Alegreya Sans SC'; sans-serif;
+		color: #7F886F;
+		margin:0;
+		padding:0;
+	}
+	.intro {
+		width: 1024px;
+		margin: auto;
+		display:block;
+		background-color: none;
+		color: darkgrey;
+		heigth: 600px;
+		padding-top: 5%;
+		}
+	.intro p {
+		width:1024px;
+		font-size:1.2em;
+		margin:auto;
+		}
+	.feature h1 {
+			font-size: 5em;
+			font-family: 'Alegreya Sans SC'; sans-serif;
+			color: #d35400;
+			margin:0;
+			padding:0;
+		}
+	.feature p {
+		    width: 800px;
+			margin: auto;
+			color: black;
+			font-size: 1.2em;
+		}
+	#subtitle {
+		    font-size: 0.35em;
+		}
+
+
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header{
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+      -o-transition: all 0.7s ease;
+         transition: all 0.7s ease;
+		position:fixed;
+		height: 80px;
+		display:block;
+		width: 1400px;
+		left: 50%;
+		margin-left: -750px;
+		z-index:9;
+		color: #d35400;
+		border-bottom: 2px solid none;
+		background-color:  #f2f2f2;
+		background: none;
+		/*
+		padding: 0px 20px 0px 150px;
+		*/
+        font-family: 'Alegreya Sans SC'; sans-serif;
+		font-size: 2em;
+		line-height: 1;
+	}
+
+    #footer{
+        position:fixed;
+        height: 50px;
+        display:block;
+        width: 99%;
+        z-index:9;
+        font-family: 'Alegreya Sans SC'; sans-serif;
+		text-align: right;
+		bottom: 0px;
+    }
+
+
+	#section0_{
+	  background-color: #f2f2f2;
+      overflow-x: hidden;
+      position: relative;
+	}
+	#section0{
+	  background: url(img/conf_3.jpg);
+	  background-size: auto 80%;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  background-color: black;
+
+	}
+	#section1{
+		background: #f2f2f2;
+		padding: 1% 0 0 0;
+	}
+	#section2{
+		background: #f2f2f2;
+		padding: 1% 0 0 0;
+	}
+	#section3{
+		background: #f2f2f2;
+		padding: 1% 0 0 0;
+	}
+	#section4{
+		background: #f2f2f2;
+		padding: 1% 0 0 0;
+		}
+	#section5{
+		background: #f2f2f2;
+		padding: 1% 0 0 0;
+	}
+
+
+.imgshadow {
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+    -khtml-box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+#menu li.active{
+	color: #3d6956;
+}
+
+#menu li:hover{
+	text-decoration: underline;
+}
+#menu li a,
+#menu li.active a{
+	color: darkgrey;
+	text-decoration: none;
+}
+#menu li.active a{
+	color: #d35400;
+}
+#menu{
+	padding-left: 50%;
+	margin-left: -650px;
+	font-size: 0.7em;
+	margin-top: 1%;
+	width: 1300px;
+	right: 0;
+	text-align: right;
+
+	}
+#scroll_cue {
+	z-index: 70;
+	width: 100%;
+	}
+.chevron {
+color: #d35400;
+		padding-top: 5%;
+		}
+.social {
+		color: #d35400;
+		padding: 10px;
+		}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+
+
+		$(function(){
+			$('#title').data('size','big');
+		});
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['Home', 'Geometry', 'Measurement', 'Analysis', 'Visualisation', 'About'],
+				navigationPosition: 'right',
+				navigationTooltips: ['Home', 'Geometry', 'Measurement', 'Analysis', 'Visualisation', 'About'],
+				menu: '#menu',
+				onLeave: function(index, nextIndex, direction){
+					var kk = document.querySelector("#varmenu");
+					if (nextIndex == 2) {
+						kk.setAttribute("data-menuanchor", "Geometry");
+					} else if (nextIndex == 3) {
+						kk.setAttribute("data-menuanchor", "Measurement");
+					} else if (nextIndex == 4) {
+						kk.setAttribute("data-menuanchor", "Analysis");
+					} else if (nextIndex == 5) {
+						kk.setAttribute("data-menuanchor", "Visualisation");
+					};
+
+				},
+				afterLoad: function(anchorLink, index){
+				hdr = $('#header');
+				// Make titlebar smaller.
+				if(index > 1)
+				{
+					if($('#title').data('size') == 'big')
+					{
+						$('#title').data('size','small');
+						hdr.stop().animate({
+							fontSize:'1.5em'
+						},100);
+						$('#menu').animate({
+							fontSize: '0.6em'
+						},100);
+						$('#menu').animate({
+							marginTop:'0%'
+						},200);
+						hdr.animate({
+							height:'50px'
+						},200);
+						hdr.animate({
+							borderBottomStyle:'solid'
+						},300);
+						hdr.animate({
+							borderBottomWidth:'2px'
+						},300);
+						hdr.animate({
+							borderBottomColor:'#d35400'
+						},300);
+					}
+				}
+				else
+				{
+					if($('#title').data('size') == 'small')
+					{
+						$('#title').data('size','big');
+						hdr.animate({
+							borderBottomWidth:'0px'
+						},100);
+						hdr.animate({
+							height:'80px'
+						},200);
+						$('#menu').animate({
+							fontSize: '0.7em'
+						},300);
+						$('#menu').animate({
+							marginTop:'1%'
+						},300);
+						hdr.animate({
+							fontSize: '2em'
+						},300);
+					}
+				}
+
+				var myElement = document.querySelector("#header");
+				var d = document.querySelector("#scroll_cue\\:" + anchorLink);
+				d.classList.add("animated");
+				d.classList.add("bounce");
+				setTimeout (function(){
+					d.classList.remove("animated")
+					d.classList.remove("bounce")
+					},1000)
+				}
+			});
+		});
+	</script>
+
+
+</head>
+<body>
+<div id="header"> <div style="padding-top:0.5%;left:0;"><div id="title" style="padding-left: 30px; padding-top: 20px;">OpenModal</div><div id="subtitle" style="padding-left: 30px;">A Fresh Approach to Modal Analysis</div></div>
+<ul id="menu" style="right:0;">
+	<li data-menuanchor="Home"><a href="#Home">Home</a></li>
+	<li id="varmenu" data-menuanchor="Geometry"><a href="#Geometry">Features</a></li>
+	<li data-menuanchor="About"><a href="#About">About</a></li>
+</ul>
+</div>
+
+<div id="footer">
+
+	<a href="mailto:info@openmodal.com" target="_blank" class="social"><i class="fa fa-envelope-square fa-2x"></i></a>
+	<a href="https://github.com/openmodal" target="_blank" class="social"><i class="fa fa-github-square fa-2x"></i></a>
+	<a href="https://twitter.com/openmodal" target="_blank" class="social"><i class="fa fa-twitter-square fa-2x"></i></a>
+	<a href="https://plus.google.com/+Openmodalapp" target="_blank" class="social"><i class="fa fa-google-plus-square fa-2x"></i></a>
+</div>
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+   <!--<iframe width="640" height="385" src="https://www.youtube.com/embed/sTSA_sWGM44" frameborder="0" allowfullscreen style="padding-bottom: 1px;"></iframe>-->
+			  			         <p>OpenModal is a measurement, analysis and visualisation software for structural dynamics
+             analysis. It is an open source software made with Python.
+		<div style="padding-top: 50px;">
+         <iframe width="1024" height="576" src="https://www.youtube.com/embed/ojr8PoRobmI" frameborder="0" style="padding-bottom: 1px;margin:auto;"></iframe>
+			</div>
+         <!--<img width="1024" height="616" src="img/ytplaceholder.jpg" frameborder="0" allowfullscreen style="padding-bottom: 1px;margin:auto;" />-->
+									 <!--<p style="font-size: 1.5em;">It will be launched in 2016.</p>-->
+		</div>
+<div id="scroll_cue:Home"><i class="fa fa-chevron-down fa-2x chevron"></i></div>
+
+	</div>
+
+	    <div class="section" id="section1">
+
+			<div class="feature">
+
+              <h1>Geometry Builder</h1>
+              <img class="imgshadow" src="geometry.gif" vspace="20" width="800px" />
+				<p>
+					Assemble the geometry of the measured object using primitives such as nodes, lines and triangles. Alternatively, import geometry from excel or uff.
+				</p>
+				<div id="scroll_cue:Geometry" class="scroll_cue"><i class="fa fa-chevron-down fa-2x chevron"></i></div>
+			</div>
+		</div>
+
+      <div class="section" id="section2">
+			<div class="feature">
+              <h1>Data Acquisition</h1>
+              <img class="imgshadow" src="measurement.gif" vspace="20" width="800px" />
+				<p>
+					Acquire data directly or import it from uff. Currently only NI hardware is supported.
+				</p>
+				<div id="scroll_cue:Measurement" class="scroll_cue"><i class="fa fa-chevron-down fa-2x chevron"></i></div>
+			</div>
+		</div>
+
+	    <div class="section" id="section3">
+			<div class="feature">
+              <h1>Modal Analysis</h1>
+              <img class="imgshadow" src="identification.gif" vspace="20" width="800px" />
+				<p>
+					Perform modal analysis using state-of-art methods. Reconstruct response from the calculated model.
+				</p>
+				<div id="scroll_cue:Analysis" class="scroll_cue"><i class="fa fa-chevron-down fa-2x chevron"></i></div>
+			</div>
+		</div>
+
+	    <div class="section" id="section4">
+			<div class="feature">
+              <h1>Visualization</h1>
+              <img class="imgshadow" src="modal_anim.gif" vspace="20" width="800px" />
+				<p>
+					Visualize and animate results.
+				</p>
+				<div id="scroll_cue:Visualisation"><i class="fa fa-chevron-down fa-2x chevron"></i></div></div>
+			</div>
+
+
+	<div class="section" id="section5">
+		<div class="feature">
+			<h1>Available In 2016!</h1>
+          <p style="padding-top: 5%;">
+  <a href="http://goo.gl/forms/tcH9ZjtfFq" style="color: #d35400;">
+             <i class="fa fa-external-link"></i>&nbsp; Send me news</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+         <a href="http://goo.gl/forms/XZwOSvRjWO" style="color: #d35400;">
+             <i class="fa fa-external-link"></i>&nbsp; Join the Team</a></p>
+			<div id="scroll_cue:About" class="scroll_cue"></div>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
