@@ -30,14 +30,36 @@
 	h1{
 		font-size: 5em;
 		font-family: 'Alegreya Sans SC'; sans-serif;
-		color: #f5c070;
+		color: #7F886F;
 		margin:0;
 		padding:0;
 	}
 	.intro p{
-		color: white;
+		color: #d35400;
 	}
-
+	.feature h1 {
+			font-size: 5em;
+			font-family: 'Alegreya Sans SC'; sans-serif;
+			color: #d35400;
+			margin:0;
+			padding:0;
+		}
+	.feature p {
+		    width: 800px;
+			margin: auto;
+			color: #d35400;
+			font-size: 1.2em;
+		}
+	.last h1 {
+			font-size: 5em;
+			font-family: 'Alegreya Sans SC'; sans-serif;
+			color: white;
+			margin:0;
+			padding:0;
+		}
+	.last p {
+			color: #73ba9a;
+		}
 	/* Centered texts in each section
 	* --------------------------------------- */
 	.section{
@@ -52,8 +74,10 @@
 		display:block;
 		width: 100%;
 		z-index:9;
-		color:white;
-		background-color:  #73ba9a;
+		color: #f2f2f2;
+		/*
+		background-color:  #E5EEAC;*/
+		background-color:  #d35400;
 		padding: 0px 20px 0 150px;
         font-family: 'Alegreya Sans SC'; sans-serif;
 	}
@@ -64,7 +88,7 @@
         display:block;
         width: 95%;
         z-index:9;
-        color: white;
+        color: #f2f2f2;
         margin-left: 20px;
         margin-top: 20px;
         font-family: 'Alegreya Sans SC'; sans-serif;
@@ -86,11 +110,12 @@
 		padding: 1% 0 0 0;
 	}
 	#section0{
-	  background-image: url(img/bwlime.png);
+	  background-image: url(img/hex_3.png);
 	  background-repeat: no-repeat;
-	  background-color: #f2f2f2;
+	  background-color: white;
       background-attachment: fixed;
-      background-size: auto;
+      background-size: contain;
+		background-color: #f2f2f2;
       overflow-x: hidden;
       position: relative;
 	}
@@ -102,13 +127,26 @@
       position: relative;
 	}
 	#section1{
-		background: rgba(230, 126, 34, 0.25);
+		background: #f2f2f2;
 		padding: 1% 0 0 0;
 	}
 	#section2{
 		background: #f2f2f2;
 		padding: 1% 0 0 0;
 	}
+	#section3{
+		background: #f2f2f2;
+		padding: 1% 0 0 0;
+	}
+	#section4{
+		background: #f2f2f2;
+		padding: 1% 0 0 0;
+		}
+	#section5{
+		background: #3d6956;
+		padding: 1% 0 0 0;
+	}
+
 
 	#header{
 		top:0px;
@@ -130,10 +168,10 @@
 	/* Overwriting styles for control arrows for slides
 	* --------------------------------------- */
 	.fp-controlArrow.fp-prev {
-		left: 20%;
+		left: 50px;
 	}
 	.fp-controlArrow.fp-next{
-		right: 20%;
+		right: 50px;
 	}
       	/* Overwriting styles for the navigation dots (to place it where we want)
 	* --------------------------------------- */
@@ -176,6 +214,46 @@
     -khtml-box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
 }
 
+#menu li {
+	display:inline-block;
+	margin: 10px;
+
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+    text-decoration: none;
+}
+#menu li.active{
+	color: #3d6956;
+}
+#menu li a{
+	text-decoration: none;
+}
+
+#menu li:hover{
+	text-decoration: underline;
+}
+#menu li a,
+#menu li.active a{
+	color: #f2f2f2;
+	padding: 9px 18px;
+	display:block;
+	text-decoration: none;
+}
+#menu li.active a{
+	color: #e67e22;
+	text-decoration: none;
+}
+#menu{
+    font-size: 20px;
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding-left: 800px;
+	margin-top: 15px;
+
 	</style>
 
 	<!--[if IE]>
@@ -217,30 +295,30 @@
 	<li data-menuanchor="About"><a href="#About">About</a></li>
 </ul>
 </div>
-<div id="footer"><!--<i class="fa fa-chevron-down" style="color: #d35400;font-size:45px;margin:auto;"></i>--><span style="background: #73ba9a; width: 350px; padding-left: 15px; padding-right:15px; padding-bottom: 35px; padding-top: 10px; float: right;">
+<div id="footer"><!--<i class="fa fa-chevron-down" style="color: #d35400;font-size:45px;margin:auto;"></i>--><span style="background: #d35400; width: 350px; padding-left: 15px; padding-right:15px; padding-bottom: 35px; padding-top: 10px; float: right;">
   <a href="http://goo.gl/forms/tcH9ZjtfFq" style="color: white;">
              <i class="fa fa-external-link"></i>&nbsp; Send me news</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
          <a href="http://goo.gl/forms/XZwOSvRjWO" style="color: white;">
-             <i class="fa fa-external-link"></i>&nbsp; I would like to help</a></span></div>
+             <i class="fa fa-external-link"></i>&nbsp; Join the Team</a></span></div>
 
 <div id="fullpage">
 	<div class="section " id="section0">
 		<!--<div class="intro" style="width:70%; margin: auto;">-->
-		<div class="intro" style="width: 1000px; margin-left: 30%; display:block; background-color: #f5c070; color: #73ba9a;">
+		<div class="intro" style="width: 1000px; margin-left: 30%; display:block; background-color: none; color: white; heigth: 600px;">
           <div  style="float:left; padding: 20px;">
+   <!--<iframe width="640" height="385" src="https://www.youtube.com/embed/sTSA_sWGM44" frameborder="0" allowfullscreen style="padding-bottom: 1px;"></iframe>-->
    <iframe width="640" height="385" src="https://www.youtube.com/embed/sTSA_sWGM44" frameborder="0" allowfullscreen style="padding-bottom: 1px;"></iframe>
 
-			         <p style="width:640px;font-size:1em;">OpenModal is a measurement, analysis and visualisation software for structural dynamics
+			         <p style="width:660px;font-size:1.2em;">OpenModal is a measurement, analysis and visualisation software for structural dynamics
              analysis. It is an open source software made with Python.<br />
          <span style="width:640px;font-size:1.5em;">It will be launched in 2016.</span></div>
-          <div id="tfeed" style="padding:20px;"> <a class="twitter-timeline"  href="https://twitter.com/openmodal" data-widget-id="640159904653791232" width="300px" height="488">Tweets by @openmodal</a>
+          <!--<div id="tfeed" style="padding:20px;"> <a class="twitter-timeline"  href="https://twitter.com/openmodal" data-widget-id="640159904653791232" width="300px" height="488">Tweets by @openmodal</a>
 
-     </div>
+     </div>-->
 		</div>
 	</div>
-	<div class="section" id="section1">
-	    <div class="slide" id="slide1">
-			<div class="intro">
+	    <div class="section" id="section1">
+			<div class="feature">
               <h1>Geometry Builder</h1>
               <img class="imgshadow" src="geometry.gif" vspace="20" width="800px" />
 				<p>
@@ -249,8 +327,8 @@
 			</div>
 		</div>
 
-      <div class="slide" id="slide2">
-			<div class="intro">
+      <div class="section" id="section2">
+			<div class="feature">
               <h1>Data Acquisition</h1>
               <img class="imgshadow" src="measurement.gif" vspace="20" width="800px" />
 				<p>
@@ -259,8 +337,8 @@
 			</div>
 		</div>
 
-	    <div class="slide" id="slide3">
-			<div class="intro">
+	    <div class="section" id="section3">
+			<div class="feature">
               <h1>Modal Analysis</h1>
               <img class="imgshadow" src="identification.gif" vspace="20" width="800px" />
 				<p>
@@ -269,8 +347,8 @@
 			</div>
 		</div>
 
-	    <div class="slide" id="slide4">
-			<div class="intro">
+	    <div class="section" id="section4">
+			<div class="feature">
               <h1>Visualization</h1>
               <img class="imgshadow" src="modal_anim.gif" vspace="20" width="800px" />
 				<p>
@@ -279,11 +357,10 @@
 			</div>
 		</div>
 
-	</div>
-	<div class="section" id="section2">
-		<div class="intro">
-			<h1>About / Team / etc</h1>
-          <p>A suggestion.</p>
+	<div class="section" id="section5">
+		<div class="last">
+			<h1>The End</h1>
+          <p>Winter is coming.</p>
 		</div>
 	</div>
 </div>
