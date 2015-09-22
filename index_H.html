@@ -4,30 +4,35 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>OpenModal - A Fresh Approach to Modal Analysis</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
-	<meta name="description" content="fullPage fixed header and footer." />
-	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
-	<meta name="Resource-type" content="Document" />
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
-	<link rel="stylesheet" type="text/css" href="fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="examples_.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="animate.min.css">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Alegreya+Sans+SC">
 
+	<meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description=" content="OpenModal is a measurement, analysis and visualisation software for structural dynamics
+             analysis. It is an open source software made with Python.">
+	<meta name="keywords" content="structural dynamics, experimental modal analysis,open,python,science,research,automotive,space,industry,operational modal analysis,source">
+	<meta name="Resource-type" content="Document" />
+	<!--<meta name="google-site-verification" content="BzEAW3l_yWDe3r8fGMy6ZrDPe0_b8EqyWpDCwX-Z7PE" />-->
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+	<!--Fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="css/fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples_.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<style>
 
 	/* Style for our header texts
 	* --------------------------------------- */
-	body {
-		font-size: large;
-		}
 	h1{
-		font-size: 5em;
-		font-family: 'Alegreya Sans SC'; sans-serif;
-		color: #7F886F;
-		margin:0;
-		padding:0;
+			font-size: 3em;
+			font-family: 'Alegreya Sans SC'; sans-serif;
+			color: #d35400;
+			margin:0;
+			padding:0;
 	}
 	.intro {
 		width: 50%;
@@ -37,10 +42,37 @@
 		heigth: 30%;
 		padding-top: 5%;
 		}
+	.intro1 {
+		width: 100%;
+		margin: auto;
+		display:block;
+		background-color: none;
+		padding-top: 3%;
+		}
+		.intro1 p {
+			margin: auto;
+			color: black;
+			font-size: 1.2em;
+		}
+		.intro1 h1 {
+			font-size: 3em;
+			font-family: 'Alegreya Sans SC'; sans-serif;
+			color: #d35400;
+			margin:0;
+			padding-bottom: 4%;
+		}
 	.intro p {
 		width: 100%;
 		font-size:1.2em;
 		margin:auto;
+		}
+	.videos_c {
+		width: 80%;
+		margin: auto;
+		display:block;
+		background-color: none;
+		heigth: 80%;
+		padding-top: 3%;
 		}
 	.feature h1 {
 			font-size: 3em;
@@ -50,9 +82,32 @@
 			padding:0;
 		}
 	.feature p {
-		    width: 800px;
+		    width: 50%;
 			margin: auto;
 			color: black;
+			font-size: 1.2em;
+		}
+
+	#contact {
+		display: block;
+		color: white;
+		margin: auto;
+		background-color: #d35400;
+		background-color: #e67e22;
+		width: 30%;
+		padding: 20px;
+		border-radius: 10px;
+		}
+	.contact h1 {
+			font-size: 3em;
+			font-family: 'Alegreya Sans SC'; sans-serif;
+			color: white;
+			margin:0;
+			padding:0;
+		}
+	.contact p {
+			margin: auto;
+			color: white;
 			font-size: 1.2em;
 		}
 	#subtitle {
@@ -63,23 +118,22 @@
 	/* Fixed header and footer.
 	* --------------------------------------- */
 	#header{
-    -webkit-transition: all 0.7s ease;
-    -moz-transition: all 0.7s ease;
-      -o-transition: all 0.7s ease;
-         transition: all 0.7s ease;
+		position:fixed;
+		display:block;
+		width: 100%;
+		z-index: 90;
+		height: 82px;
+		border-bottom: 2px solid #d35400;
+		background-color:  #f2f2f2;
+	}
+
+	#subheader{
 		position:fixed;
 		height: 80px;
-		display:block;
 		width: 80%;
 		left: 50%;
 		margin-left: -40%;
-		z-index:9;
-		color: #d35400;
-		border-bottom: 2px solid #d35400;
-		background-color:  #f2f2f2;
-		/*
-		padding: 0px 20px 0px 150px;
-		*/
+		z-index:90;
         font-family: 'Alegreya Sans SC'; sans-serif;
 		font-size: 2em;
 		line-height: 1;
@@ -126,11 +180,19 @@
 		background: #f2f2f2;
 		padding: 1% 0 0 0;
 		}
+	#section5{
+		background: white;
+		padding: 1% 0 0 0;
+		}
+	#section6{
+		background: #f2f2f2;
+		padding: 1% 0 0 0;
+		}
 	#section5_{
 		background: white;
 		padding: 1% 0 0 0;
 	}
-	#section5{
+	#section7{
 	  background: url(img/conf_3.jpg);
 	  background-size: auto 100%;
 	  background-repeat: no-repeat;
@@ -141,6 +203,7 @@
 
 
 .imgshadow {
+	width: 50%;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
@@ -148,7 +211,6 @@
 }
 
 #menu li.active{
-	color: #3d6956;
 	color: black;
 		border: 0;
 		border-radius: 0;
@@ -166,7 +228,7 @@
 }
 #menu li.active a{
 	color: #d35400;
-		padding-bottom: 13px;
+		padding-bottom: 18px;
 }
 #menu{
 	font-size: 0.7em;
@@ -227,8 +289,7 @@ color: #d35400;
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="fullPage.js"></script>
-	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript" src="js/fullPage.js"></script>
 
 	<script type="text/javascript">
 
@@ -239,9 +300,9 @@ color: #d35400;
 		var pageprogress = 0;
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['Home', 'Geometry', 'Measurement', 'Analysis', 'Visualisation', 'About'],
+				anchors: ['Home', 'Geometry', 'Measurement', 'Analysis', 'Visualisation', 'Code', 'Videos', 'More'],
 				navigationPosition: 'right',
-				navigationTooltips: ['Home', 'Geometry', 'Measurement', 'Analysis', 'Visualisation', 'About'],
+				navigationTooltips: ['Home', 'Geometry', 'Measurement', 'Analysis', 'Visualisation', 'Code', 'Videos', 'More'],
 				menu: '#menu',
 				//autoScrolling: false,
 				onLeave: function(index, nextIndex, direction){
@@ -254,12 +315,14 @@ color: #d35400;
 						kk.setAttribute("data-menuanchor", "Analysis");
 					} else if (nextIndex == 5) {
 						kk.setAttribute("data-menuanchor", "Visualisation");
+					} else if (nextIndex == 6) {
+						kk.setAttribute("data-menuanchor", "Code");
 					};
 
 
-					if (index > pageprogress) {
+					if ((index > pageprogress) & (nextIndex > index)) {
 						pageprogress = index;
-						var anc = ['Home', 'Geometry', 'Measurement', 'Analysis', 'Visualisation', 'About'];
+						var anc = ['Home', 'Geometry', 'Measurement', 'Analysis', 'Visualisation', 'Code', 'Videos', 'More'];
 						var element = document.querySelector("#scroll_cue\\:" + anc[index-1]);
 						element.parentNode.removeChild(element);
 					}
@@ -286,105 +349,159 @@ color: #d35400;
 
 </head>
 <body>
-<div id="header"> <div style="padding-top:0.5%;"><div id="title">OpenModal</div><div id="subtitle">A Fresh Approach to Modal Analysis</div></div>
-<ul id="menu">
-	<li data-menuanchor="Home"><a href="#Home">Home</a></li>
-	<li id="varmenu" data-menuanchor="Geometry"><a href="#Geometry">Features</a></li>
-	<li data-menuanchor="About"><a href="#About">About</a></li>
-</ul>
-</div>
-
-<div id="footer">
-
-	<a href="mailto:info@openmodal.com" target="_blank" class="social"><i class="fa fa-envelope-square fa-2x"></i></a>
-	<a href="https://github.com/openmodal" target="_blank" class="social"><i class="fa fa-github-square fa-2x"></i></a>
-	<a href="https://twitter.com/openmodal" target="_blank" class="social"><i class="fa fa-twitter-square fa-2x"></i></a>
-	<a href="https://plus.google.com/+Openmodalapp" target="_blank" class="social"><i class="fa fa-google-plus-square fa-2x"></i></a>
-</div>
-<div id="fullpage">
-	<div class="section " id="section0">
-		<div class="intro">
-   <!--<iframe width="640" height="385" src="https://www.youtube.com/embed/sTSA_sWGM44" frameborder="0" allowfullscreen style="padding-bottom: 1px;"></iframe>-->
-			  			         <p>OpenModal is a measurement, analysis and visualisation software for structural dynamics
-             analysis. It is an open source software made with Python.
-		<div style="padding-top: 50px;">
-			<div class="video_container">
-         <iframe width="1024" height="576" src="https://www.youtube.com/embed/ojr8PoRobmI" frameborder="0" allowfullscreen></iframe>
-				</div>
+	<div id="header">
+		<div id="subheader">
+			<div style="padding-top:0.2%;">
+				<div id="title">OpenModal</div>
+				<div id="subtitle">A Fresh Approach to Modal Analysis</div>
 			</div>
-         <!--<img width="1024" height="616" src="img/ytplaceholder.jpg" frameborder="0" allowfullscreen style="padding-bottom: 1px;margin:auto;" />-->
-									 <!--<p style="font-size: 1.5em;">It will be launched in 2016.</p>-->
+			<ul id="menu">
+				<li data-menuanchor="Home"><a href="#Home">Home</a></li>
+				<li id="varmenu" data-menuanchor="Geometry"><a href="#Geometry">Features</a></li>
+				<li data-menuanchor="Videos"><a href="#Videos">Videos</a></li>
+				<li data-menuanchor="More"><a href="#More">More</a></li>
+			</ul>
 		</div>
-<div id="scroll_cue:Home"><i class="fa fa-chevron-down fa-2x chevron"></i></div>
-
 	</div>
 
-	    <div class="section" id="section1">
+	<div id="footer">
+		<a href="mailto:info@openmodal.com" target="_blank" class="social"><i class="fa fa-envelope-square fa-2x"></i></a>
+		<a href="https://github.com/openmodal" target="_blank" class="social"><i class="fa fa-github-square fa-2x"></i></a>
+		<a href="https://twitter.com/openmodal" target="_blank" class="social"><i class="fa fa-twitter-square fa-2x"></i></a>
+		<a href="https://plus.google.com/+Openmodalapp" target="_blank" class="social"><i class="fa fa-google-plus-square fa-2x"></i></a>
+	</div>
 
-			<div class="feature">
-
-              <h1>Geometry Builder</h1>
-              <img class="imgshadow" src="geometry.gif" vspace="20" width="800px" />
-				<p>
-					Assemble the geometry of the measured object using primitives such as nodes, lines and triangles. Alternatively, import geometry from excel or uff.
-				</p>
-				<div id="scroll_cue:Geometry" class="scroll_cue">
-					<!--<i class="fa fa-chevron-down fa-2x chevron"></i>-->
+	<div id="fullpage">
+		<div class="section " id="section0">
+			<div class="intro">
+				<h1 style="font-size: 1.5em; padding-bottom: 1%;">Accelerating the implementation of your ideas.</h1>
+				<div class="video_container">
+					<iframe width="1024" height="576" src="https://www.youtube.com/embed/ojr8PoRobmI" frameborder="0" allowfullscreen></iframe>
 				</div>
+			</div>
+		<div id="scroll_cue:Home"><i class="fa fa-chevron-down fa-2x chevron"></i></div>
+	</div>
+
+		<div class="section" id="section1">
+			<div class="feature">
+				<h1>Geometry Builder</h1>
+					<img class="imgshadow" src="img/geometry.gif" vspace="20" />
+					<p>
+						Assemble the geometry of the measured object using primitives such as nodes, lines and triangles. Alternatively, import geometry from excel or uff.
+					</p>
+					<div id="scroll_cue:Geometry" class="scroll_cue">
+						<i class="fa fa-chevron-down fa-2x chevron"></i>
+					</div>
 			</div>
 		</div>
 
-      <div class="section" id="section2">
+		<div class="section" id="section2">
 			<div class="feature">
-              <h1>Data Acquisition</h1>
-              <img class="imgshadow" src="measurement.gif" vspace="20" width="800px" />
+				<h1>Data Acquisition</h1>
+				<img class="imgshadow" src="img/measurement.gif" vspace="20" />
 				<p>
-					Acquire data directly or import it from uff. Currently only NI hardware is supported.
+					Acquire data directly or import it from uff. National Instruments hardware is supported, more to come.
 				</p>
 				<div id="scroll_cue:Measurement" class="scroll_cue">
-					<!--<i class="fa fa-chevron-down fa-2x chevron"></i>-->
+					<i class="fa fa-chevron-down fa-2x chevron"></i>
 				</div>
 			</div>
 		</div>
 
-	    <div class="section" id="section3">
+		<div class="section" id="section3">
 			<div class="feature">
-              <h1>Modal Analysis</h1>
-              <img class="imgshadow" src="identification.gif" vspace="20" width="800px" />
+				<h1>Modal Analysis</h1>
+				<img class="imgshadow" src="img/identification.gif" vspace="20" />
 				<p>
-					Perform modal analysis using state-of-the-art methods. Reconstruct response from the calculated model.
+					Perform modal analysis using state-of-the-art methods.
 				</p>
 				<div id="scroll_cue:Analysis" class="scroll_cue">
-					<!--<i class="fa fa-chevron-down fa-2x chevron"></i>-->
+					<i class="fa fa-chevron-down fa-2x chevron"></i>
 				</div>
 			</div>
 		</div>
 
-	    <div class="section" id="section4">
+		<div class="section" id="section4">
 			<div class="feature">
-              <h1>Visualization</h1>
-              <img class="imgshadow" src="modal_anim.gif" vspace="20" width="800px" />
+			  <h1>Visualization</h1>
+			  <img class="imgshadow" src="img/modal_anim.gif" vspace="20" />
 				<p>
 					Visualize and animate results.
 				</p>
 				<div id="scroll_cue:Visualisation">
-					<!--<i class="fa fa-chevron-down fa-2x chevron"></i>-->
-				</div></div>
+					<i class="fa fa-chevron-down fa-2x chevron"></i>
+				</div>
 			</div>
+		</div>
 
+		<div class="section" id="section5">
+			<div class="feature">
+			  <h1>Code</h1>
+			  <img src="img/libs.png" vspace="20" width="40%" style="padding-top: 2%; padding-bottom: 2%;margin: auto;" />
+				<p>
+					OpenModal is written in Python and develped on GitHub.
+				</p>
+			</div>
+				<div id="scroll_cue:Code" style="padding-bottom:3%;">
+					<i class="fa fa-chevron-down fa-2x chevron"></i>
+				</div>
+		</div>
 
-	<div class="section" id="section5">
-		<div class="feature">
-			<h1>Available In 2016!</h1>
-          <p style="padding-top: 5%;">
-  <a href="http://goo.gl/forms/tcH9ZjtfFq" style="color: #d35400;">
-             <i class="fa fa-external-link"></i>&nbsp; Send me news</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-         <a href="http://goo.gl/forms/XZwOSvRjWO" style="color: #d35400;">
-             <i class="fa fa-external-link"></i>&nbsp; Join the Team</a></p>
-			<div id="scroll_cue:About" class="scroll_cue"></div>
+		<div class="section" id="section6">
+			<div class="intro1" style="padding-bottom: 15%;">
+				<h1>More Videos</h1>
+				<div style="width: 80%; padding-left: 18%; padding-bottom: 5%;">
+					<div style="width:40%; heigth: 100%; float: left; padding-left: 1%; padding-right: 1%;">
+						<div class="video_container">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/fM6nw9xl-sU" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<p style="margin-left: 1%;">
+							Experimental modal analysis of a beam structure.
+						</p>
+					</div>
+					<div style="width:40%; heigth: 100%;float:left; padding-left: 1%; padding-right: 1%;">
+						<div class="video_container">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/e8z9dB_raXE" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<p style="margin-left: 1%;">
+							Full video from the ICoEV conference in Ljubljana, Slovenia.
+						</p>
+					</div>
+				</div>
+			</div>
+				<div id="scroll_cue:Videos" style="padding-bottom:3%; width: 100%; margin:auto;">
+					<i class="fa fa-chevron-down fa-2x chevron" style="width: 100%;"></i>
+				</div>
+		</div>
+
+		<div class="section" id="section7">
+			<div id="contact">
+				<h1 style="color:white;">Available In 2016!</h1>
+					<p style="padding: 40px;">
+						<a href="http://goo.gl/forms/tcH9ZjtfFq" style="color: white;">
+							<i class="fa fa-external-link"></i>&nbsp; Send me news</a>
+							<br />
+						<a href="http://goo.gl/forms/XZwOSvRjWO" style="color: white;">
+							<i class="fa fa-external-link"></i>&nbsp; Join the Team</a>
+					</p>
+
+				<div id="scroll_cue:More" class="scroll_cue"></div>
+			</div>
 		</div>
 	</div>
+	<script src="js/script.js"></script>
+	<script src="js/validation.js"></script>
 
-</div>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-64441850-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
 </body>
 </html>
