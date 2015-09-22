@@ -105,12 +105,15 @@ p{
 }
 #menu{
 	position:fixed;
+	/*
 	top:0;
-	left:0;
+	left:0;*/
 	height: 40px;
 	z-index: 70;
-	width: 100%;
-	padding-left: 800px;
+	/*
+	width: 100%;*/
+	/*
+	padding-left: 800px;*/
 	margin:0;
 }
 .twitter-share-button{
