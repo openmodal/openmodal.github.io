@@ -24,6 +24,10 @@
 	<link rel="stylesheet" type="text/css" href="css/examples_.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/fullPage.js"></script>
 	<style>
 
 	/* Style for our header texts
@@ -41,7 +45,6 @@
 		display:block;
 		background-color: none;
 		heigth: 30%;
-		padding-top: 3%;
 		}
 
 	.intro1 {
@@ -82,7 +85,6 @@
 			font-family: 'Alegreya Sans SC'; sans-serif;
 			color: #d35400;
 			margin:0;
-			padding-top:80px;
 		}
 	.feature p {
 		    width: 50%;
@@ -237,24 +239,7 @@
 	font-size: 0.7em;
 	right: 10%;
 	top: 17px;
-		/*
-	float: right;
-	margin: auto;
-
-	width: 45%;
-	right: 50%;
-	margin-right: -40%;
-	border-radius: 0px;*/
-
 	}
-#scroll_cue {
-	z-index: 70;
-	width: 100%;
-	}
-.chevron {
-color: #d35400;
-		padding-top: 5%;
-		}
 .social {
 		color: #d35400;
 		padding: 10px;
@@ -284,19 +269,7 @@ color: #d35400;
 		width: 100%;
 		height: 100%;
 		}
-.fp-controlArrow {
-    position: absolute;
-    z-index: 4;
-    top: 50%;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    margin-top: -38px;
-    -webkit-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
+
 .fp-controlArrow.fp-prev {
     left: 10%;
     width: 0;
@@ -308,30 +281,36 @@ color: #d35400;
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #e67e22;
 }
-}
-.arrowUp,
-.arrowDown{
-    position:fixed;
-    z-index:200;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    margin-left: -38px;
-    left: 50%;
-}
-.arrowDown{
-    bottom: 20px;
-    border-width: 38.5px 34px 0 38.5px;
-    border-color: red transparent transparent transparent;
-}
-.arrowUp{
-    top: 20px;
-    border-width: 0 38.5px 34px 38.5px;
-    border-color: transparent transparent red transparent;
-}
-.section {
+
+
+
+.rtextbottom {
+		position: fixed;
+		display: block;
+		bottom: 2%;
+		right: 50%;
+		cursor: pointer;
+		padding-bottom: 40px;
+		margin-right: -75px;
+		width: 150px;
+		color: #e67e22;
+		font-size: 1.2em;
+		z-index: 100;
 		text-align: center;
+	}
+.arrow-down {
+		position: fixed;
+		bottom: 2%;
+		left: 50%;
+		margin-left: -38px;
+		cursor: pointer;
+		width: 0;
+		height: 0;
+		border-width: 38.5px 34px 0 38.5px;
+		border-left: 38.5px solid transparent;
+		border-right: 38.5px solid transparent;
+
+		border-top: 38.5px solid #e67e22;
 		}
 	</style>
 
@@ -341,63 +320,28 @@ color: #d35400;
 		</script>
 	<![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/fullPage.js"></script>
+
 
 	<script type="text/javascript">
 
 
-		$(function(){
-			$('#title').data('size','big');
-		});
-		var pageprogress = 0;
+
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['Home', 'Mission', 'Code', 'More'],
+				anchors: ['Home', 'Mission', 'More'],
 				navigationPosition: 'right',
-				navigationTooltips: ['Home', 'Mission', 'Code', 'More'],
+				navigationTooltips: ['Home', 'Mission', 'More'],
 				menu: '#menu',
 				//autoScrolling: false,
-				loopHorizontal: false,
-				onLeave: function(index, nextIndex, direction){
-					var kk = document.querySelector("#varmenu");
-					if (nextIndex == 2) {
-						kk.setAttribute("data-menuanchor", "Mission");
-					} else if (nextIndex == 3) {
-						kk.setAttribute("data-menuanchor", "Code");
-					}
-					//else if (nextIndex == 4) {
-					//	kk.setAttribute("data-menuanchor", "Analysis");
-					//} else if (nextIndex == 5) {
-					//	kk.setAttribute("data-menuanchor", "Visualisation");
-					//} else if (nextIndex == 6) {
-					//	kk.setAttribute("data-menuanchor", "Code");
-					//};
+				loopHorizontal: false
+			});
 
 
-					//if ((index > pageprogress) & (nextIndex > index)) {
-					//	pageprogress = index;
-					//	var anc = ['Home', 'Geometry', 'Measurement', 'Analysis', 'Visualisation', 'Code', 'Videos', 'More'];
-					//	var element = document.querySelector("#scroll_cue\\:" + anc[index-1]);
-					//	element.parentNode.removeChild(element);
-					//}
-
-
-				},
-				afterLoad: function(anchorLink, index){
-
-				//if (index > pageprogress) {
-				//	var myElement = document.querySelector("#header");
-				//	var d = document.querySelector("#scroll_cue\\:" + anchorLink);
-				//	d.classList.add("animated");
-				//	d.classList.add("bounce");
-				//	setTimeout (function(){
-				//		d.classList.remove("animated")
-				//		d.classList.remove("bounce")
-				//		},1000)
-				//	}
-				}
+			$('#arrownext').click(function(){
+				$.fn.fullpage.moveSectionDown();
+			});
+			$('#actionbottom').click(function(){
+				$.fn.fullpage.moveSectionDown();
 			});
 		});
 	</script>
@@ -405,6 +349,7 @@ color: #d35400;
 
 </head>
 <body>
+
 	<div id="header">
 		<div id="subheader">
 			<div style="padding-top:0.1%;">
@@ -426,9 +371,16 @@ color: #d35400;
 		<a href="https://twitter.com/openmodal" target="_blank" class="social"><i class="fa fa-twitter-square fa-2x"></i></a>
 	</div>
 
+
+
 	<div id="fullpage">
-		<div class="section " id="section0">
+		<div class="section" id="section0">
+
+			<div id="actionbottom" class="rtextbottom">Our Mission</div>
+			<div id="arrownext" class="arrow-down"></div>
 			<div class="slide">
+
+
 				<div class="intro">
 					<h1 style="font-size: 1.5em; padding-bottom: 1%;">Accelerating the implementation of your ideas</h1>
 					<div class="video_container">
@@ -490,14 +442,15 @@ color: #d35400;
 		<div class="section" id="section4">
 
 			<div class="feature">
-			  <h1 style="padding-bottom: 3%; padding-top: 100px;">What is OpenModal?</h1>
+			  <h1 style="padding-bottom: 3%; padding-top: 80px;">What is OpenModal?</h1>
 				<div style="display: block; border-bottom: 0px solid #e67e22; border-top: 0px solid #e67e22;width: 40%; height: 30%; margin: auto;">
 <div style="display: block; width: 33%; border-bottom: 2px solid #e67e22;margin:auto;"></div>
 					<p style="color: black;text-align: center; padding-bottom: 3%; padding-top: 3%; width: 95%;">
-						Open modal is a modal analysis frameworkt. Blfdaga Full video from the International Conference on
-						Engineering Vibration, Sep 2015.Experimental modal analysis of a beam structure. OpenModal is written
-						in Python and developed on GitHub. Experimental modal analysis of a beam structure. OpenModal is written
-						in Python and developed on GitHub. Open modal is a modal analysis frameworkt.
+						The mission of the OpenModal project is to create an open modal-analysis framework that will
+						accelerate the implementation of research ideas. The framework covers basic steps of geometry
+						definition, data acquisition, identification and animation. It is based on the
+						open Python ecosystem end enables the use of the same code for scientific research as well as
+						for the final implementation.
 					</p>
 					<div style="display: block; width: 33%; border-bottom: 2px solid #e67e22;margin:auto;"></div>
 				</div>
@@ -509,15 +462,15 @@ color: #d35400;
 			</div>
 		</div>
 
-		<div class="section" id="section5">
-			<div class="feature">
-			  <h1>Code</h1>
-			  <img src="img/libs.png" vspace="20" width="40%" style="padding-top: 2%; padding-bottom: 2%;margin: auto;" />
-				<p>
-					OpenModal is written in Python and developed on GitHub.
-				</p>
-			</div>
-		</div>
+		<!--<div class="section" id="section5">-->
+			<!--<div class="feature">-->
+			  <!--<h1>Code</h1>-->
+			  <!--<img src="img/libs.png" vspace="20" width="40%" style="padding-top: 2%; padding-bottom: 2%;margin: auto;" />-->
+				<!--<p>-->
+					<!--OpenModal is written in Python and developed on GitHub.-->
+				<!--</p>-->
+			<!--</div>-->
+		<!--</div>-->
 
 		<!--<div class="section" id="section6">-->
 			<!--<div class="intro1" style="padding-bottom: 15%;">-->
