@@ -122,10 +122,10 @@
 				</figure>
 			</div>
 		
-		<h1 class="page-header">Spectral Analysis</h1>
-		<p class="lead">Analysis can be performed once the measurements are present within the OpenModal project. Usually they should be limited to a <b>frequency band</b> which can be set 
+		<h1 class="page-header">Modal analysis</h1>
+		<p class="lead">Analysis can be performed once the measurements are present within the OpenModal project. Usually they are limited to a <b>frequency band</b> which can be set
 		by specifying the minimum and maximum frequency on the right-hand side. The analysis is then performed by a click on the <kbd class="alert-success"><span class="fa fa-play"></span> Analyze</kbd> button which draws additional layer 
-		of calculated poles (plus signs) which must be selected by the user, giving modal shapes in the table on the right-hand side.</p>
+		of calculated poles (natural frequency and damping ratio) which must be selected by the user and are represented in the table on the right-hand side. </p>
 
 			<div class="container">
 				<figure class="figure">
@@ -135,8 +135,22 @@
 			</div>
 			
 		<div class="jumbotron alert-warning">
-			<h2>Modal synthesis methods</h2>
-			<p>OpenModal contains quite a few methods that can be used to synthesise an analytic model of the structure. BLAŽ TUKAJ TE RABIM :)</p>
+			<h2>Modal identification estimators</h2>
+			<p>Modal parameters can be identified by curve-fitting a set of Frequency Response Functions (They can also be identified by an equivalent set of Impulse Response Functions). In general, curve fitting is a process of matching a
+				mathematical expression to a set of empirical data points.</p>
+			<p>Currently supported estimators are:
+
+			<ul>
+			  <li>LSCF - the Least-Squares Complex Frequency Domain estimator (default) and</li>
+			  <li>LSCE - the Least-Squares Complex Exponential estimator.</li>
+			</ul>
+			</p>
+			<p>Both estimate the poles, which are represented by:
+			<ul>
+			  <li>red plus signs - stable poles (both natural frequency and damping) and</li>
+			  <li>yellow triangle signs - partially stable poles (only natural frequency is stable).</li>
+			</ul>
+			</p>
 		</div>
 		
 		<h1 class="page-header">Visualization</h1>
