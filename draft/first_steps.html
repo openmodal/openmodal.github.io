@@ -136,21 +136,10 @@
 			
 		<div class="jumbotron alert-warning">
 			<h2>Modal identification estimators</h2>
-			<p>Modal parameters can be identified by curve-fitting a set of Frequency Response Functions (They can also be identified by an equivalent set of Impulse Response Functions). In general, curve fitting is a process of matching a
-				mathematical expression to a set of empirical data points.</p>
-			<p>Currently supported estimators are:
-
-			<ul>
-			  <li>LSCF - the Least-Squares Complex Frequency Domain estimator (default) and</li>
-			  <li>LSCE - the Least-Squares Complex Exponential estimator.</li>
-			</ul>
-			</p>
-			<p>Both estimate the poles, which are represented by:
-			<ul>
-			  <li>red plus signs - stable poles (both natural frequency and damping) and</li>
-			  <li>yellow triangle signs - partially stable poles (only natural frequency is stable).</li>
-			</ul>
-			</p>
+			<p>Modal parameters are identified by curve-fitting a set of Frequency Response Functions or Impulse Response Functions. In general, curve fitting is a process of matching a
+				mathematical expression to a set of empirical data points. The Least-Squares Complex Frequency Domain estimator (LSCF) and the Least-Squares Complex Exponential estimator (LSCE)
+				are methods, currently supported within OpenModal, of which the first one is the default choice. Both methods estimate the poles, which are represented by red plus signs (both natural frequency
+				and damping are stable) or yellow triangles (only natural frequency is stable).</p>
 		</div>
 		
 		<h1 class="page-header">Visualization</h1>
