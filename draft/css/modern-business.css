@@ -19,9 +19,9 @@ body {
 hr {
     /*border-color: #81b33a;*/
     border-color: #f47c3c;
-    border-width: 9px;
+    border-width: 3px;
     max-width: 150px;
-    margin: 100px auto;
+    margin: 75px auto;
 }
 
 .main-text
@@ -133,4 +133,32 @@ footer {
     header.carousel .carousel {
         height: 70%;
     }
+}
+
+img {
+	width: 90%;
+}
+
+figure {
+	padding: 20px;
+}
+
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
+.text-warning {
+  color: #8a6d3b;
+}
+.btn {
+    border-radius: 0;
+}
+
+.panel {
+    border-radius: 0;
+}
+.panel-heading {
+    border-radius: 0;
 }
