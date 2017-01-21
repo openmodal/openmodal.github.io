@@ -16,14 +16,28 @@ body {
     padding-top: 10%;
 }
 
+.h1-title {
+	background-color: rgba(244,124,60, 0.5);
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
 hr {
     /*border-color: #81b33a;*/
     border-color: #f47c3c;
-    border-width: 3px;
-    max-width: 150px;
-    margin: 75px auto;
+    border-width: 1px;
+    max-width: 120px;
 }
 
+/*
+hr {
+    /*border-color: #81b33a;*/
+/*    border-color: #f47c3c;
+    border-width: 5px;
+    max-width: 190px;
+    margin: 100px auto;
+}
+*/
 .main-text
 {
     position: absolute;
@@ -69,7 +83,7 @@ body {
 /* Home Page Carousel */
 
 header.carousel {
-    height: 50%;
+    height: 65%;
 }
 
 header.carousel .item,
