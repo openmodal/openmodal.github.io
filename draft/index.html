@@ -105,7 +105,7 @@
 		<div class="container" style="padding-top:5%; padding-bottom:3%;">
 		<div class="row">
 			<div class="col-md-8">
-				<p class="lead hidden-xs">OpenModal is open source experimental modal analysis software written in Python. An intuitive user interface can be used to define nodes and elements, perform data acquisition, modal identification analysis and interactive visualization of results. It promotes open science and colaboration on open source projects.</p>
+				<p class="lead hidden-xs" style="font-size: 1.2em;">OpenModal is open source experimental modal analysis software written in Python. The intuitive user interface can be used to define nodes and elements, perform data acquisition, modal identification analysis and interactive visualization of results. It promotes open science and colaboration on open source projects.</p>
 			<br /><br />
 			</div>
 			<div class="col-md-4">
@@ -134,7 +134,7 @@
 				</div>
 				<div class="col-lg-4">
 					<h2>Define geometry</h2>
-					<p class="lead">You can create simple geometries like: lines,... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+					<p class="lead">Geometry builder lets you create your models from nodes with specified coordinates and coordinate systems. It supports 2D and 3D primitives such as lines, planes, cylinders and boxes of different shapes. Large node patterns can be generated automatically by using the geometry wizzard.</p>
 				</div>
 			</div>
 		</div>
@@ -145,8 +145,8 @@
 					<img class="img-responsive" src="images/measurement.gif" alt="">
 				</div>
 				<div class="col-lg-4">
-					<h2>Measure with NI Hardware</h2>
-					<p class="lead">Currently, you can use the NI hardware. Operational and experimental modal analysis (impact/random) is supported.</p>
+					<h2>Measure signals</h2>
+					<p class="lead">Acquire data in experiments or import it from uff. Operational and experimental modal analysis are supported through the options of different excitations signals, such as impulse or random. National Instruments hardware is the only one supported at the moment.</p>
 				</div>
 			</div>
 		</div>
@@ -158,8 +158,8 @@
 					<img class="img-responsive" src="images/identification.gif" alt="">
 				</div>
 				<div class="col-lg-4">
-					<h2>Voluptatibus eveniet</h2>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+					<h2>Modal analysis</h2>
+					<p class="lead">Modal parameters are identified by a process of curve fitting that is used to estimate the poles (natural frequencies and damping ratios). The LSCF and LSCE methods are available.</p>
 				</div>
 			</div>
 		</div>
@@ -172,8 +172,8 @@
 					<img class="img-responsive" src="images/modal_anim.gif" alt="">
 				</div>
 				<div class="col-lg-4">
-					<h2>Urna varius</h2>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+					<h2>Visualization</h2>
+					<p class="lead">Measured and analyzed data can be visualized and animated giving insighth into dynamics of the structure. Each mode can be visualzied as well as measured data, based on the frequency-response spectrum.</p>
 				</div>
 			</div>
 		</div>
@@ -184,8 +184,6 @@
                     <h4>PURE PYTHON</h4>
                     <h1 style="margin-top:5px;">Relying heavily on the open source community.</h1>
                 </div>
-        
-		
 		<p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
 		
             <div class="row" style="padding-top:7%;">
@@ -206,8 +204,7 @@
                     <h4>OPEN LIBRARIES</h4>
                     <h1>Available through <i>pip</i> and on Github.</h1>
                 </div>
-				
-						<p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+						<p class="lead">The OpenModal project spawned the development of Python libraries that may be usefull for other projects related to signal processing, structural analysis, measurement and others. We will continue to provide standalone libraries when parts of OpenModal grow mature enough. So far, the following Python libraries have been made available on PyPI and on Gihtub.</p>
 
 		</div>
 		<!-- old color: #c9e2a5 #eef7ee -->
@@ -217,8 +214,8 @@
                 <div class="panel" style="background-color: #c9e2a5;">
                     <div class="panel-body">
                         <h3>pyuff</h3>
-                        <p style="padding-top:15px;">Defines the UFF class for manipulating the UFF (Universal File Format) files.
-Read from and write of data-set types 151, 15, 55, 58, 58b, 82, 164 is supported.</p>
+                        <p style="padding-top:15px;">Defines a Python object for manipulating with the UFF (Universal File Format) files. Implements multiple fields for storing geometry, coordinate systems,
+						measured frequency-response functions and experimental modal analysis results.</p>
                         <a href="https://github.com/openmodal/pyuff">Github</a> / <a href="https://pypi.python.org/pypi/pyuff">PyPI</a>
                     </div>
                 </div>
@@ -227,7 +224,7 @@ Read from and write of data-set types 151, 15, 55, 58, 58b, 82, 164 is supported
                 <div class="panel" style="background-color: #c9e2a5;">
                     <div class="panel-body">
                         <h3>lvm_read</h3>
-                        <p style="padding-top:15px;">LabView Measurement file reader.</p>
+                        <p style="padding-top:15px;">Implements a parser for reading text-type LabView Measurement files. It reads the header data and supports files that are split into multiple sections.</p>
                         <a href="https://github.com/openmodal/lvm_read">Github</a> / <a href="https://pypi.python.org/pypi/lvm_read/">PyPI</a>
                     </div>
                 </div>
@@ -237,7 +234,8 @@ Read from and write of data-set types 151, 15, 55, 58, 58b, 82, 164 is supported
 
                     <div class="panel-body">
                         <h3>pyFRF</h3>
-                        <p style="padding-top:15px;">Frequency response function as used in structural dynamics,</p>
+                        <p style="padding-top:15px;">Frequency-response functions (common in analysis of structural dynamics), can be defined using the pyFRF object.
+						Different window and averaging options are available. The library can be used with impulse as well as random excitation.</p>
                         <a href="https://github.com/openmodal/pyFRF">Github</a> / <a href="https://pypi.python.org/pypi/pyFRF">PyPI</a>
                     </div>
                 </div>
@@ -275,7 +273,7 @@ Read from and write of data-set types 151, 15, 55, 58, 58b, 82, 164 is supported
 				<div class="well">
 					<div class="row">
 						<div class="col-md-8">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+						<p>Subscribe to our newsleter and be notified of new developments, such as the future releases of OpenModal or when new libraries are available. Be sure to <a href="http://eepurl.com/bWecET">let us know</a> if you are interested in contributing to the open source code base.</p>
 						</div>
 						<div class="col-md-4">
 							<a class="btn btn-lg btn-default btn-block" href="http://eepurl.com/bAc3Dj">Subscribe to Newsletter</a>
