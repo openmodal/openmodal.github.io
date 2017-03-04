@@ -10,6 +10,16 @@ h4 {
 	color: #f47c3c;
 }
 
+.navbar-brand {
+  padding: 3px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 5px 20px 2px 2px;
+  width: auto;
+}
+
 .caption-title-1 {
 	background-color: rgba(244,124,60, 0.7);
 	/*background-color: rgba(0, 0, 0, 0.7);*/
