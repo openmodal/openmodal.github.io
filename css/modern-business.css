@@ -11,6 +11,16 @@ body {
     height: 100%;
 }
 
+.navbar-brand {
+  padding: 4px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 7px 20px 2px 2px;
+  width: auto;
+}
+
 .features {
     padding-bottom: 10%;
     padding-top: 10%;
@@ -155,16 +165,6 @@ img {
 
 figure {
 	padding: 20px;
-}
-
-.navbar-brand {
-  padding: 4px;
-}
-
-.navbar-brand>img {
-  height: 100%;
-  padding: 7px 20px 2px 2px;
-  width: auto;
 }
 
 .alert-warning {
