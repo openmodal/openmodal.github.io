@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /index2.html /index_H.html /index_I.html /sprites/ /working/ /index_redo.html
+Disallow: /index2.html /index_H.html /index_I.html /sprites/ /working/ /index_redo.html /draft/
