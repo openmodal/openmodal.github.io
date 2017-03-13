@@ -3,8 +3,9 @@ html, body {
 }
 
 body {
-	background: url('../img/conf_4.jpg') no-repeat scroll;
-  background-position-y: 60px;
+	background: url('../img/conf_4.jpg') no-repeat scroll top;
+  background-position-y: -60px;
+  background-size: cover;
 }
 
 h4 {
